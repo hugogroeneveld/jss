@@ -32,7 +32,7 @@ if (process.env.BUILD_TARGET_ENV === 'server') {
   vueConfig.devServer = {
     port: 8085,
     proxy: {
-      '/' : {
+      '/sitecore' : {
         target: 'http://localhost:3042',
         logLevel: 'debug',
       }
