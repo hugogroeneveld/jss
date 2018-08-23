@@ -34,7 +34,14 @@ if (process.env.BUILD_TARGET_ENV === 'server') {
     proxy: {
       '/sitecore' : {
         target: 'http://localhost:3042',
+        logLevel: 'warn',
+      },
+      '/services/' : {
+        target: 'https://viamijnwerk.dev.aon.nl/',
+        changeOrigin: true,
+        autoRewrite: true,
         logLevel: 'debug',
+        secure: false
       }
     }
   };

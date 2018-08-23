@@ -135,7 +135,10 @@
             "name": "ExampleCustomRouteType"
           },
           {
-            "name": "ContentBlock"
+            "name": "MijnOverzicht"
+          },
+          {
+            "name": "MijnVerzekeringen"
           },
           {
             "name": "C__AppRoute"
